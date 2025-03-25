@@ -1,0 +1,231 @@
+:root {
+  --primary-color : red ;
+  --secondary-color : #f7bcf7 ;
+  --laightcolor : #ffffff ;
+  --bgColor : #171a11 ;
+  --bgColor-2 : #22282a ;
+  --padding : 8% ;
+}
+
+*{
+  padding : 0 ;
+  margin : 0 ;
+  box-sizing : border-box;
+}
+
+html {
+  font-family: "Outfit", "Segoe UI", sans-serif;
+  font-size : 16px ;
+  color: var(--laightcolor) ;
+}
+
+.home {
+  width : 100% ;
+  height : 100vh ;
+  background-color :  var(--bgColor) ;
+  display : flex ;
+  flex-direction : column ;
+}
+
+.hm {
+  font-size : 1.8rem ;
+  letter-spacing : 0.12rem ;
+  cursor : pointer;
+  padding: 8px ;
+}
+
+span {
+  color: red ;
+}
+
+nav {
+  padding-top: 2.2rem ;
+  padding-left: var(--padding) ;
+  padding-right: var(--padding) ;
+  display: flex ;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0.8rem  1.5rem ;
+}
+
+nav ul li a {
+  color: var(--laightcolor);
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.4s ;
+}
+
+nav ul li a:hover{
+  color: var(--primary-color) ;
+  font-size: 18px ;
+}
+
+.content {
+  flex-grow: 1;
+  padding: var(--padding) ;
+  padding-right: 0 ;
+  display: flex ;
+  align-items: center;
+}
+
+.continer-text {
+  position: relative;
+  bottom: 40px ;
+}
+
+h1{
+  font-size: 3.5rem ;
+  margin: 1.2rem  0 ;
+}
+
+h3{
+  font-size: 1.5rem ;
+}
+
+h4{
+  font-size: 1.25rem ;
+  letter-spacing: 0.14rem ;
+  color: var(--secondary-color);
+}
+
+.continer-image {
+  width: 45%;
+  height: 85%;
+  position:relative;
+}
+
+.continer-image img {
+  width: 75%;
+  height: 110%;
+  position: absolute;
+  left: 25% ;
+  transition: 0.3s ;
+
+}
+
+.continer-image img:hover{
+  width: 80% ;
+  height: 120% ;
+}
+
+.about {
+  background-color: var(--bgColor-2) ;
+  padding: 2.2rem  5% ;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about .img-about {
+  width: 45% ;
+}
+
+.about .img-about img {
+  width: 90% ;
+}
+
+.about .txt-about {
+  width: 50% ;
+}
+
+p{
+  color: var(--secondary-color) ;
+  letter-spacing: 1px ;
+  line-height: 1.8rem ;
+  font-size: 1.2rem ;
+}
+
+h3 {
+  font-size: 1.3rem ;
+  margin-bottom: 1.5rem ;
+}
+
+.skills {
+  background-color: var(--bgColor) ;
+  padding: 2.2rem  5% ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skills .skills-continer {
+  width: 40% ;
+  margin-top: 0;
+}
+
+.content-skills {
+  display: flex ;
+  flex-wrap: wrap;
+  margin-top: 10%;
+  padding: 0 0px ;
+}
+
+.skills .img-skills {
+  width: 35% ;
+}
+
+.skills .img-skills img {
+  width: 90% ;
+
+}
+
+
+
+.contact {
+  background-color: var(--bgColor-2) ;
+  padding: 2.2rem  5% ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact .continer {
+  width: 60% ;
+  margin-top: 0;
+}
+
+.contact .content {
+  cursor: pointer;
+  display: flex ;
+  flex-wrap: wrap;
+  margin-top: 5%;
+  padding-left: 0 ;
+}
+
+.contact .continer h1 {
+  padding-left: 4% ;
+}
+.contact .content img {
+  padding-left: 10px ;
+  width: 15% ;
+  transition: 0.4s ;
+}
+
+.contact .content img:hover{
+  width: 20% ;
+}
+
+.contact .img-contact {
+  width: 40% ;
+}
+
+.contact .img-contact img {
+  width: 90% ;
+}
+
+footer{
+  padding: 2rem var(--padding) ;
+  background-color: var(--bgColor) ;
+}
+
+footer .content-footer {
+  display: flex ;
+  flex-direction: column ;
+  align-items: center;
+  justify-content: center;
+}
